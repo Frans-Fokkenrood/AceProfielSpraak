@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ACE voor ProfielSpraak</title>
+<link href="favicon.ico" rel="shortcut icon"/>
+<style type="text/css" media="screen">
+	#editor { 
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		font-size: 1.2em;
+	}
+</style>
+</head>
+<body>
+<div id="editor">/* ProfielSpraak */
+Maak een score met de volgende parameters:			// commentaar regel...
+	- score is HOOG
+indien aan de volgende voorwaarden wordt voldaan:
+	- de aangifte heeft rubriek bestemming is gelijk aan "Frankrijk"
+	- de aangifte heeft rubriek omschrijving bevat "BOM"
+	.
+</div>
+<script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="src-noconflict/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	ace.require("ace/ext/language_tools");
+	var editor = ace.edit("editor");
+	editor.setTheme("ace/theme/profielspraak");
+	editor.getSession().setMode("ace/mode/profielspraak");
+	editor.setOptions({
+		enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: true
+	});
+	editor.gotoLine(8);
+</script>
+</body>
+</html>
