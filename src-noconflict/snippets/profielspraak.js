@@ -3,22 +3,22 @@ ace.define("ace/snippets/profielspraak",["require","exports","module"], function
 
 exports.snippets = [
 	{
-		"content": "Maak een score met de volgende parameters:\n",
-		"name": "Maak",
+		"content": "wordt gesteld op ",
+		"name": "gelijkstelling",
 		"scope": "profielspraak",
-		"tabTrigger": "Maak"
+		"tabTrigger": "gelijkstelling"
 	},
 	{
-		"content": "- de ${1} heeft rubriek ",
-		"name": "rubriek",
+		"content": "wordt berekend als ${1} maal ${2} ",
+		"name": "berekening",
 		"scope": "profielspraak",
-		"tabTrigger": "rubriek"
+		"tabTrigger": "berekening"
 	},
 	{
-		"content": "indien aan de volgende voorwaarden wordt voldaan:\n",
-		"name": "indien",
+		"content": "indien aan alle volgende voorwaarden wordt voldaan:\n",
+		"name": "voorwaarde",
 		"scope": "profielspraak",
-		"tabTrigger": "indien"
+		"tabTrigger": "voorwaarde"
 	}
 ];
 exports.scope = "";

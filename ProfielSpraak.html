@@ -16,11 +16,16 @@
 </head>
 <body>
 <div id="editor">/* ProfielSpraak */
-Maak een score met de volgende parameters:			// commentaar regel...
-	- score is HOOG
-indien aan de volgende voorwaarden wordt voldaan:
-	- de aangifte heeft rubriek bestemming is gelijk aan "Frankrijk"
-	- de aangifte heeft rubriek omschrijving bevat "BOM"
+Regel "ACTN_X_Y" luidt:
+
+Het percentage invoerrecht wordt gesteld op 50				// percentage
+	en de factuurwaarde wordt gesteld op 1500				// bedrag in Euros
+	en het bedrag aan invoerrecht wordt berekend als de factuurwaarde maal het percentage invoerrecht
+	en het certificaat wordt gesteld op "geen"				// afleidingen
+	
+indien aan alle volgende voorwaarden wordt voldaan:
+	- goederen omschrijving is gelijk aan "Fiets"			// Fiets, Fietsbroek of Kippenvlees
+	- land van herkomst is gelijk aan "Taiwan"				// Taiwan, China, India of Nederland
 	.
 </div>
 <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>

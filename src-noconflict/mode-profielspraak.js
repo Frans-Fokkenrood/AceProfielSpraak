@@ -22,11 +22,11 @@ var ProfielSpraakHighlightRules = function() {
 //			regex : "[+-]?\\d+\\b"
 		},	{
 			token : "constant.language",
-			regex : "aangifte|HOOG|MIDDEN|LAAG"
+			regex : "50|1500"
 		}, {
 			token : "keyword",
-			regex : "aan|bevat|de|een|gelijk|heeft|indien|is|Maak|met|" +
-					"parameters|rubriek|score|voldaan|volgende|voorwaarden|wordt"
+			regex : "(aan|alle|als|berekend|de|en|gelijk|gesteld|Het|het|" +
+					"indien|is|luidt|maal|op|Regel|voldaan|volgende|voorwaarden|wordt)"
 		}, {
 			token : "keyword.operator",
 			regex : "\\-|\\:|\\."
@@ -38,7 +38,7 @@ var ProfielSpraakHighlightRules = function() {
 			regex : "[\\)]"
 		}, {
 			token : "variable",
-			regex : "\\w+"
+			regex : '\\w.*?(?=\\s*(is|maal|wordt|$))'
 		} ]
 	};
 	this.normalizeRules();
